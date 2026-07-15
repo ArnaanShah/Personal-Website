@@ -1,0 +1,451 @@
+/* Doto Font */
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap');
+/* Lora Font */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+/*Pixelify Sans Font*/
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+/*Geist Pixel*/
+@import url('https://fonts.googleapis.com/css2?family=Geist+Pixel&display=swap');
+
+
+:root {
+    --background-color: #303030;
+    --primary-color: #181818;
+    --text-color: #7c7c7c;
+    --navText-color: #ffffff;
+    --hover-text-color: #707070;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lora', sans-serif;
+    color: var(--text-color);
+    scroll-behavior: smooth;
+    
+}
+
+body {
+    background-image: url(images/background.jpg);
+    padding: 1em;
+    cursor: url(images/NormalCursor.png), auto;
+}
+
+a, button, input {
+    cursor: url(images/Pointer.png) 4 4, pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3 {
+    font-family: 'Doto', sans-serif;
+    color: var(--text-color);
+}
+
+nav {
+    font-family: 'Doto', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 1em auto 3em auto;
+    width: min(100%, 75em);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    flex-wrap: wrap;
+    gap: clamp(1em, 6vw, 8em);
+}
+
+nav li:first-child {
+    margin-right: auto;
+    font-family: 'Doto', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--navText-color);
+}
+
+nav a:hover {
+    color: var(--hover-text-color);
+    text-decoration: dashed line-through;
+}
+
+header,section, project {
+    display: block;
+    margin: 2em auto;
+    width: min(150em, 100%);
+    background-color: var(--primary-color);
+    padding: min(2em, 15%);
+    border-radius: 2.5em;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3em;
+}
+
+.arnaan-image {
+    border-radius: 1em;
+    object-position: center;
+    width: min(900px, 100%);
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover; 
+}
+
+.first-text-container {
+    flex: 0 1 34em;
+}
+
+.second-text-container {
+    flex: 0 1 34em;
+}
+
+.third-text-container {
+    flex: 0 1 50em;
+    text-align: center;
+    min-width: 0;
+
+}
+
+.fourth-text-container {
+    flex: 0 1 50em;
+    text-align: left;
+}
+
+h1 {
+    font-size: clamp(2em, 8vw, 5em);
+}
+
+h2 {
+    font-size: clamp(1.5em, 6vw, 3em);
+}
+
+.normal-period {
+    font-family: 'Pixelify Sans', serif;
+    font-size: 0.6em;
+}
+
+.first-text-container p {
+    margin: .75em 0 1em 0;
+    line-height: 2em;
+    font-size: 1.5em
+}
+
+
+.second-text-container p {
+    margin: .75em 0 1em 0;
+    line-height: 2em;
+    font-size: 1.5em
+}
+
+.third-text-container p {
+    margin: .75em 0 1em 0;
+    line-height: 1.5em;
+    font-size: 2em
+}
+
+.fourth-text-container p {
+    margin: .75em 0 0.5em 0.25em;
+    line-height: 1.25em;
+    font-size: 2em
+}
+
+.fourth-text-container h2 {
+    margin: .75em 0 0.5em 0.25em;
+    line-height: 1.25em;
+    font-size: 3em
+}
+
+.page1-button {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--navText-color);
+    background-color: rgb(100, 0, 0);
+    --button-hover-color: rgb(125, 0, 0);
+    padding: .75em 1.25em;
+    border-radius: .5em;
+    font-weight: bold;
+    font-family: 'Doto', sans-serif;
+    margin: 0.5em 0 0 0;
+}
+
+.page2-button {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--navText-color);
+    background-color: rgb(0, 0, 100);
+    --button-hover-color: rgb(0, 0, 125);
+    padding: .75em 1.25em;
+    border-radius: .5em;
+    font-weight: bold;
+    font-family: 'Doto', sans-serif;
+    margin: 0.5em 0 0 0;
+}
+
+
+.page3-button {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--navText-color);
+    background-color: rgb(0, 100, 0);
+    --button-hover-color: rgb(0, 125, 0);
+    padding: .75em 1.25em;
+    border-radius: .5em;
+    font-weight: bold;
+    font-family: 'Doto', sans-serif;
+    margin: 0.5em 0 0 0;
+}
+
+.page1-button:hover, .page2-button:hover, .page3-button:hover {
+    background-color: var(--button-hover-color);
+    color: var(--navText-color);
+}
+
+.viewAll-container {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.learnMore-container {
+    margin-top: 0.5em;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+section {
+    padding: 3em min(2em, 15%);
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+section p {
+    margin: 1em;
+    font-size: 1.5em;
+}
+
+project {
+    padding: 3em min(2em, 15%);
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+project p {
+    margin: 1em;
+    font-size: 1.5em;
+}
+
+
+.project-button {
+    display: block;
+    width: min(50em, 50%);
+    text-align: center;
+    text-decoration: none;
+    color: var(--navText-color);
+    background-color: #3f3f3f;
+    --button-hover-color: rgb(0, 0, 0);
+    padding: .75em 1.25em;
+    border-radius: .5em;
+    font-weight: bold;
+    font-family: 'Doto', sans-serif;
+    margin: 0.5em 0 0 0;
+}
+
+.project-button:hover {
+    background-color: var(--button-hover-color);
+    color: var(--navText-color);
+}
+
+.project-image {
+    border-radius: 1em;
+    object-position: center;
+    width: min(350px, 100%);
+    height: auto;
+    aspect-ratio: 1.5;
+    object-fit: cover; 
+}
+
+
+.project-tags {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.project-tag {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: var(--navText-color);
+    background-color: #3f3f3f;
+    --button-hover-color: rgb(0, 0, 0);
+    padding: .75em 1.25em;
+    border-radius: .5em;
+    font-weight: bold;
+    font-family: 'Doto', sans-serif;
+    margin: 0.5em 0 0 0;
+}
+
+
+.scroll-gallery {
+    overflow: hidden;
+    width: 100%;
+    margin-top: 2em;
+}
+
+.scroll-track {
+    display: flex;
+    gap: 1.5em;
+    width: max-content;
+    animation: scroll-loop 60s linear infinite;
+}
+
+.scroll-gallery:hover .scroll-track {
+    animation-play-state: paused;
+}
+
+.scroll-item {
+    flex: 0 0 auto;
+    display: block;
+    width: 220px;
+    height: 220px;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+.scroll-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease-out;
+}
+
+.scroll-item:hover img {
+    transform: scale(1.05);
+}
+
+@keyframes scroll-loop {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+project {
+    scroll-margin-top: 2em;
+}
+
+.About-me-picture {
+    border-radius: 50%;
+    object-position: center;
+    width: min(100%, 500px);
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+
+
+.contact-form form {
+    width:  clamp(15em, 30vw, 60em);    
+    height: fit-content;
+    aspect-ratio: 3;
+    margin-left: 0%;
+    padding-left: 0;
+    border-radius: 1em;
+    display:flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    font-size: 2em;    
+    font-family: 'Geist Pixel',serif;
+    background-color: #111111;
+}
+
+.contact-form input::placeholder {
+  color: var(--text-color);
+  opacity: 1;
+}
+
+.contact-form input[type="text"] {
+    width:  clamp(5em, 20vw, 60em);         
+    height: clamp(1.25em, 2vw, 4em);        
+    font-size: 1.5em;     
+    box-sizing: border-box; 
+    background-color: var(--background-color);
+    border-color: black;
+    color: white;
+    font-family: Doto;
+    border-radius: 0.25em;
+}
+
+.contact-form input[type="email"] {
+    width:  clamp(12.5em, 20vw, 30em);    
+    height: 2em;        
+    font-size: clamp(.75em, 2vw, 1.75em);   
+    box-sizing: border-box;
+    background-color: var(--background-color);
+    border-color: black;
+    color: white;
+    font-family: Doto;
+    border-radius: 0.25em;
+}
+
+.contact-form textarea{
+    width:  clamp(20em, 25vw, 45em);    
+    height: 4em;       
+    font-size: 0.5em; 
+    box-sizing: border-box;
+    background-color: var(--background-color);
+    border-color: black;
+    color: white;
+    font-family: Doto;
+    font-weight: bold;
+    resize: none;
+    border-radius: 0.25em;
+}
+
+.contact-form textarea::placeholder{
+  color: var(--text-color);
+  opacity: 1;
+}
+
+.contact-form button {
+    background-color: #b9b983;
+    width:  clamp(15em, 15vw, 20em);   
+    height: clamp(2.5em, 2.75vw, 3em);
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    border: black;
+    border-radius: 1em;
+}
+
+
+.contact-form button:hover {
+    background-color: #868660;
+    width:  clamp(15em, 15vw, 20em);   
+    height: clamp(2.5em, 2.75vw, 3em);
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    border: black;
+    border-width: 2px;
+    border-radius: 1em;
+}
