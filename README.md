@@ -1,6 +1,6 @@
 # Personal-Website 
 <img width="2518" height="1283" alt="image" src="https://github.com/user-attachments/assets/b0103865-e06c-4b8a-a274-12d464618d83" />
-This is my personal website that displays information about me. I made it as a part of Hackclub's Stardance but plan to continue using it in the future. It is hosted on Github Pages. It has 4 separate pages including Home, About Me, My Projects, and Reach out. When the website is successfully deployed, it will be in a link here.
+This is my personal website that displays information about me. I made it as a part of Hackclub's Stardance but plan to continue using it in the future. It is hosted on Github Pages. It has 4 separate pages including Home, About Me, My Projects, and Reach out. Check it out [here!](arnaanshah.github.io/Personal-Website/)
 
 # How it's made
 The website uses a combination of **HTML** and **CSS** along with a couple tricks to allow for a seamless look and some animations.
