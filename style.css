@@ -362,14 +362,10 @@ project {
     object-fit: cover;
 }
 
-.contact-form {
-    min-width: 0; /* allow this flex child to actually shrink */
-}
 
 
 .contact-form form {
-    width:  clamp(280px, 50vw, 30em);
-    max-width: 100%;
+    width:  clamp(10em, 30vw, 60em);    
     height: fit-content;
     aspect-ratio: 3;
     margin-left: 0%;
@@ -382,10 +378,6 @@ project {
     font-size: 2em;    
     font-family: 'Geist Pixel',serif;
     background-color: #111111;
-}
-
-.contact-form input {
-    max-width: 95%;
 }
 
 .contact-form input::placeholder {
@@ -406,7 +398,7 @@ project {
 }
 
 .contact-form input[type="email"] {
-    width:  clamp(12.5em, 20vw, 30em);    
+    width:  clamp(10em, 20vw, 30em);    
     height: 2em;        
     font-size: clamp(.75em, 2vw, 1.75em);   
     box-sizing: border-box;
@@ -418,8 +410,7 @@ project {
 }
 
 .contact-form textarea{
-    width:  clamp(20em, 25vw, 45em);
-    max-width: 95%;    
+    width:  clamp(0, 25vw, 45em);    
     height: 4em;       
     font-size: 0.5em; 
     box-sizing: border-box;
@@ -444,7 +435,7 @@ project {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     border: black;
-    border-radius: 1em;
+    border-radius: 1.5em;
 }
 
 
@@ -456,5 +447,5 @@ project {
     margin-bottom: 0.5em;
     border: black;
     border-width: 2px;
-    border-radius: 1em;
+    border-radius: 1.5em;
 }
