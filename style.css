@@ -410,7 +410,7 @@ project {
 }
 
 .contact-form textarea{
-    width:  clamp(1%, 25vw, 45em);    
+    width:  clamp(0, 25vw, 45em);    
     height: 4em;       
     font-size: 0.5em; 
     box-sizing: border-box;
