@@ -362,10 +362,14 @@ project {
     object-fit: cover;
 }
 
+.contact-form {
+    min-width: 0; /* allow this flex child to actually shrink */
+}
 
 
 .contact-form form {
-    width:  clamp(15em, 30vw, 60em);    
+    width:  clamp(280px, 50vw, 30em);
+    max-width: 100%;
     height: fit-content;
     aspect-ratio: 3;
     margin-left: 0%;
@@ -378,6 +382,10 @@ project {
     font-size: 2em;    
     font-family: 'Geist Pixel',serif;
     background-color: #111111;
+}
+
+.contact-form input {
+    max-width: 95%;
 }
 
 .contact-form input::placeholder {
@@ -410,7 +418,8 @@ project {
 }
 
 .contact-form textarea{
-    width:  clamp(20em, 25vw, 45em);    
+    width:  clamp(20em, 25vw, 45em);
+    max-width: 95%;    
     height: 4em;       
     font-size: 0.5em; 
     box-sizing: border-box;
